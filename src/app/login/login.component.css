@@ -1,0 +1,29 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.login-container>.login-panel {
+  background-color: #edf1f2;
+  border-radius: 5px;
+  width: 400px;
+  padding: 50px;
+}
+input {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.attendance-checkbox {
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
+.submit-btn {
+    width: 150px;
+    margin: auto;
+}
+.disable-btn {
+    pointer-events: none;
+    opacity: 0.5;
+}

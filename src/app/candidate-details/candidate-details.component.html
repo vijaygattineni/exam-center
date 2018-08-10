@@ -1,0 +1,26 @@
+<div class="details-container">
+  <div class="details-panel" *ngIf="!loadingCandidateDetails && userDetails">
+    <h5 class="form-signin-heading">Confirm Your Details</h5>
+    <img class="img-center" alt="Candidate Image" [src]="'data:image/png;base64,'+userDetails.CandidateInfo.photo | safe" />
+    <div class="row detail-box">
+      <div class="col-md-5">Candidate Name:</div>
+      <div class="col-md-7 detail-value">
+        {{userDetails.CandidateInfo.name ? userDetails.CandidateInfo.name : 'NA'}}
+      </div>
+    </div>
+    <div class="row detail-box">
+      <div class="col-md-5">Roll Number:</div>
+      <div class="col-md-7 detail-value">{{userDetails.rollNumber ? userDetails.rollNumber : 'NA'}}</div>
+    </div>
+    <div class="buttons-container">
+      <button type="button" class="btn btn-sm btn-success" routerLink="/instructions">Confirm</button>
+      <button type="button" class="btn btn-sm btn-outline-secondary float-right" (click)="cancelConfirmation()">Cancel</button>
+    </div>
+  </div>
+  <div *ngIf="loadingCandidateDetails">
+    <i class="fas fa-spinner fa-spin fa-3x"></i>
+  </div>
+  <div class="text-danger" *ngIf="!loadingCandidateDetails && errorMessage">
+    {{errorMessage}}
+  </div>
+</div>

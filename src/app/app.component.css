@@ -1,0 +1,21 @@
+.mainBody {
+    font-family: Helvetica, Arial, Sans-Serif;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */    
+}
+.mainBody .router-outlet-container {
+    padding: 30px 50px;
+}
+.mainBody .main-header {
+    padding: 15px 30px;
+    background-color:black;
+    color:white;
+}
+.mainBody .sub-header {
+    padding: 0px 30px;
+    background-color:gray;
+    color:white;
+    text-align: right;
+}

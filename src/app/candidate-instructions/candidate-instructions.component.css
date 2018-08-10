@@ -1,0 +1,22 @@
+.instructions-header {
+    text-decoration: underline;
+    font-size: 14px;
+}
+.instructions-body {
+    max-height: 350px;
+    overflow-y: auto;
+}
+.instructions-footer {
+    padding-top: 30px;
+    padding-right: 20px;
+}
+.align-center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.disable-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}

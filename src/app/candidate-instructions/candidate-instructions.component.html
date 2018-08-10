@@ -1,0 +1,19 @@
+<div class="instructions-container" *ngIf="!loadingInstructions && instructions">
+  <h5>Read the instructions carefully</h5>
+  <div class="instructions-header">General instructions</div>
+  <div class="instructions-body" [innerHTML]="instructions">
+  </div>
+  <div class="instructions-footer">
+    <label class="attendance-checkbox">
+      <input type="checkbox" [(ngModel)]="confirmInstructions"> I confirm that I have understood all the instructions
+    </label>
+    <button type="button" class="btn btn-sm btn-primary {{confirmInstructions ? '' : 'disable-btn'}} float-right" (click)="startTest()" >Start Test</button>
+    <!--<a id="exam-url"style="display:hidden" href="www.google.com">Start</a>-->
+</div>
+</div>
+<div *ngIf="loadingInstructions" class="align-center-container">
+  <i class="fas fa-spinner fa-spin fa-3x"></i>
+</div>
+<div class="align-center-container text-danger" *ngIf="!loadingInstructions && errorMessage">
+  {{errorMessage}}
+</div>
