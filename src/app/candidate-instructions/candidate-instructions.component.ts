@@ -20,10 +20,10 @@ export class CandidateInstructionsComponent implements OnInit {
    * Candidate's Start Test
    */
   startTest() {
+    this.loadingInstructions = true;
     this.appSerivce.startExam()
       .subscribe((response) => {
         this.startUrl = response.url;
-        console.log(this.startUrl);
         window.location.href = this.startUrl;
       }, (errorResponse) => {
         this.errorMessage = 'Error On Start test' + errorResponse;

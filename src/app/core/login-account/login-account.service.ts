@@ -4,7 +4,7 @@ import { Router, CanActivate, NavigationStart } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class AnonymousAccountService {
+export class LoginAccountService {
 
     constructor(private router: Router) { }
 

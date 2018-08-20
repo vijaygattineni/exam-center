@@ -11,9 +11,9 @@
     <!--<a id="exam-url"style="display:hidden" href="www.google.com">Start</a>-->
 </div>
 </div>
-<div *ngIf="loadingInstructions" class="align-center-container">
+<div class="status-alignment" *ngIf="loadingInstructions" >
   <i class="fas fa-spinner fa-spin fa-3x"></i>
 </div>
-<div class="align-center-container text-danger" *ngIf="!loadingInstructions && errorMessage">
+<div class="status-alignment text-danger" *ngIf="!loadingInstructions && errorMessage">
   {{errorMessage}}
 </div>

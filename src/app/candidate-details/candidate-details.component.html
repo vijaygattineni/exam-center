@@ -17,10 +17,10 @@
       <button type="button" class="btn btn-sm btn-outline-secondary float-right" (click)="cancelConfirmation()">Cancel</button>
     </div>
   </div>
-  <div *ngIf="loadingCandidateDetails">
+  <div class="status-alignment" *ngIf="loadingCandidateDetails">
     <i class="fas fa-spinner fa-spin fa-3x"></i>
   </div>
-  <div class="text-danger" *ngIf="!loadingCandidateDetails && errorMessage">
+  <div class="status-alignment text-danger" *ngIf="!loadingCandidateDetails && errorMessage">
     {{errorMessage}}
   </div>
 </div>
