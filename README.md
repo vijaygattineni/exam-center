@@ -1,6 +1,7 @@
 # MTRM
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+Built on Angular 6.X
 
 ## Development server
 
@@ -9,6 +10,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+## Project description
+Responsive, student test taking web application.
+
 
 ## Build
 
