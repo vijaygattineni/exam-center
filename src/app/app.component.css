@@ -10,12 +10,19 @@
 }
 .mainBody .main-header {
     padding: 15px 30px;
-    background-color:black;
+    background-color:#006ea1;
     color:white;
 }
 .mainBody .sub-header {
     padding: 0px 30px;
-    background-color:gray;
-    color:white;
+    background-color:#edf1f2;
+    color:#000;
     text-align: right;
+}
+.merit-logo {
+    height: 40px;
+}
+.nmat-logo {
+    float: right;
+    margin-top: -10px;
 }
